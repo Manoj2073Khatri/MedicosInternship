@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    height:100%;
+    width: 100%;
+    background: linear-gradient(90deg,rgb(35,37,47) 60%, rgb(43,45,56) 50%)
+}
+.row{
+   display: flex;
+   justify-content: left;
+   
+
+}
+.column1{
+    height:100%;
+    width:50%;
+    color: white;
+    margin-left: 150px;
+    margin-top: 100px;
+  
+}
+.column2{
+    height:100%;
+    width:50%;
+    color:white;
+    margin-left: 250px;
+    margin-top: 220px;
+}
+
+.forms{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+ }
+ .form{
+     margin-bottom: 25px;
+ }
+
+ .form input{
+    height:60px;
+    width: 220px;
+    background-color: rgb(35,37,47);
+    color: white;
+    border-color: white;
+}
+
+.form_left_last input{
+    height: 120px;
+    width:500px ;
+   margin-bottom: 20px;
+   background-color: rgb(35,37,47);
+   color: white;
+   border-color: white;
+}
+.form select{
+   height:60px;
+   width: 220px;
+   background-color: rgb(35,37,47);
+   color: white;
+   border-color: white;
+
+}
+
+img{
+    border-radius: 50%;
+}
+.guests{
+    margin-top: 115px;
+}
+.guest{
+    display:flex;
+    flex-direction: column;
+}
+.list h3{
+    margin-left: 80px;
+    transform: translateY(-50px);
+}
+.list p{
+    margin-left: 80px;
+    transform: translateY(-50px);
+}
+
+.button {
+    background-color:white; 
+    border: none;
+    color:rgb(35,37,47);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+ .button:hover{
+     color: blue;
+ }
+ 
+ @media(max-width:1000px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        
+     }
+     .form_left_last input{
+        height: 120px;
+        width:220px ;
+       margin-bottom: 20px;
+       background-color: rgb(35,37,47);
+       color: white;
+       border-color: white;
+    }
+   
+    body{
+       
+        background: rgb(35,37,47) 60%
+    }
+    .column2{
+        height:100%;
+        width:50%;
+        color:white;
+        margin-left: 150px;
+        margin-top: 100px;
+
+    }
+ }
