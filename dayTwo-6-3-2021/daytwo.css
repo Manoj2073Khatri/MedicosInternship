@@ -17,6 +17,7 @@
 }
 .nav1_content img{
     margin-left: 50px;
+   
 }
 .nav1_content a{
     margin-right: 50px;
@@ -27,7 +28,7 @@
 .nav2{
     margin-top: 25px;
     margin-left: 70px;
-    margin-right: 50px;
+    margin-right: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,11 +51,12 @@
 .nav2_content4{
     color: rgb(1,173,185);
     transform: translateX(22.5rem);
+    z-index: 1;
     
 }
 .nav2_content5 input{
     height: 40px;
-    width:210px ;
+    width:220px ;
     
 }
 
@@ -96,7 +98,7 @@ hr{
 
 }
 .sec2_content{
-   width:220px;
+    width:220px;
   
 
 }
@@ -106,6 +108,7 @@ hr{
 .sec2_content p{
     
     font-weight: bolder ;
+    transform: translateX(-.9rem);
   
 }
 .section3{
@@ -128,7 +131,7 @@ hr{
     
 }
 .sec3_content1 h2{
-    font-size: 30px;
+    font-size: 40px;
     width: 550px;
     margin-bottom: 10px;
 }
@@ -203,7 +206,7 @@ hr{
      margin-top: 10px;
  }
  .sec4_content2_content1 p{
-    margin-left: 8rem;
+    margin-left: 6.8rem;
      color: rgb(220, 219, 219);
      font-size: 10px;
     
@@ -230,7 +233,7 @@ hr{
  }
  .sec4_content2_content2 p{
     
-   margin-bottom: 15px;
+   margin-bottom: 20px;
 
  }
  .sec4_content2_content2 input{
@@ -238,6 +241,7 @@ hr{
      height: 40px;
      width:250px;
      margin-bottom: 15px;
+     transform: translateX(0px);
  }
  .button {
     background-color:#01adb9; 
@@ -251,15 +255,17 @@ hr{
     font-size: 16px;
     margin-bottom: 20px;
   }
-  .sec5_content1{
+  .sec5_content1_content1{
       display: flex;
       justify-content: space-between;
       align-items: baseline;
   }
-  .sec5_content1_content1 p{
-      font-weight: bolder;
-      color:#01adb9;
+  .sec5_content1_content1 h1{
+      flex: 1;
   }
+  .sec5_content1_content1 p{
+    color: rgb(1,173,185);
+}
 
   .sec5_content2{
       display: flex;
@@ -417,15 +423,15 @@ hr{
 hr{
     margin-top: 25px;
     color: rgb(220, 219, 219);
-    margin-bottom:60px ;
+    /* margin-bottom:60px ; */
 
 }
 .total_Contents_content4{
     
     background-color: rgb(251,245,237);
-   
-    height:350px;
+    height:30rem;
     width: 100%;
+    margin-top: 60px;
     
 }
 .section10{
@@ -435,29 +441,111 @@ hr{
     margin-right: 80px;
    
 }
-
-.sec10_content1{
-    
-   width:300px;
+.sec10_content1{  
+    width:300px;
     display: flex;
     justify-content: space-between ;
     
 }
+.sec10_content1 h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.sec10_content1 i{
+    margin-top: 18px;
+    
+}
 
+.sec10_content2{
+    display: flex;
+    margin-top: 3rem;
+}
+.sec10_content2_content1{
+ flex: 2.6;
+}
+.sec10_content2_content1 p,input{
+   transform: translateX(-20px);
+}
+.sec10_content2_content2{
+flex: 2;
+transform: translateX(10rem);
+}
+.sec10_content2_content3{
+flex: 1.9;
+}
+.sec10_content2_content2_content{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.sec10_content2_content3_content{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.sec10_content2_content1 p{
+    font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec10_content2_content1 input{
+    height: 2.8rem;
+    width:15rem
 
-
-
-
-
-
-
-
+}
+.sec10_content2_content1 button{
+    border: none;
+ background-color:#01adb9 ;
+  transform: translateX(-4.1rem);
+  height:3.089rem;
+  width:8rem;
+  
+}
 
 /* 
 last page */
 footer{ 
-  
+    background-color:black;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+footer div{
+    color: white;
+    
+}
+.foot_content3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    transform: translateY(-5px);
+   
+}
+.foot_content3_content1{
+    display: flex;
+    flex-direction: row-reverse;
+  
+}
+.foot_content3_content2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+   
+}
+.foot_content1{
+margin-left: 20px;
+}
+.foot_content1 img{
+    margin-left:75px ;
+}
+.foot_content1 p{
+    font-size: 20px;
+}
+.foot_content4{
+    margin-right: 45px;
+}
+.foot_content2{
+   transform: translateX(21.5rem);
+   margin-top: 1.8rem;
 }
