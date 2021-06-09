@@ -87,7 +87,7 @@
   
    background-image: url('./images/cover1.jpg' );
    object-fit: contain;
-   height:450px;
+   height:400px;
    width: 100%;
    animation: slider 30s infinite 2s;
    
