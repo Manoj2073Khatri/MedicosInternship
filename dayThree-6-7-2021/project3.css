@@ -26,7 +26,7 @@
 }
 .nav-top-row li{
    margin-left: 1rem;
-  
+   transition:all .4s ease;
    font-size: 14px;
    opacity: .9;
 }
@@ -37,11 +37,18 @@
 
 .nav-bottom{
     width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    height: 80px;
     background: linear-gradient(90deg, #221e67 0%, #5e1f70 24.95%, #7a2976 48.4%, #a3387d 82.83%, #b63f81 100%);
     display: flex;
     justify-content: space-between;
     padding:1.1rem 7.5rem;
     color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease;
 
    
 }
@@ -52,6 +59,7 @@
     margin-top: 8px;
     font-size: 15.5px;
    font-weight: 550;
+   transition: all 4s ease;
 }
 .nav-bottom-left li{
    margin-left: 2.5rem;
@@ -61,15 +69,45 @@
 }
 .nav-bottom-right{
     margin-top: 8px;
+    transition: all 4s ease;
 }
 .nav-bottom-right i:nth-child(1){
     margin-right: 2rem;
 }
+.nav-top ul li:hover .nav-bottom{
+    visibility: visible;
+    opacity: 1;
+    transition: .2s ease;
+}
 
 /*--------------------------Cover Page--------------------------------*/
 
-.cover-page-section img{
-    object-fit: contain;
+
+.cover-slider{
+  
+   background-image: url('./images/cover1.jpg' );
+   object-fit: contain;
+   height:450px;
+   width: 100%;
+   animation: slider 30s infinite 2s;
+   
+}
+@keyframes slider{
+    0%{
+        background-image: url('./images/cover1.jpg');
+    }
+    20%{
+        background-image: url('./images/cover2.jpg');
+    }
+    40%{
+        background-image: url('./images/cover3.jpg');
+    }
+    60%{
+        background-image: url('./images/cover4.jpg');
+    }
+    80%{
+        background-image: url('./images/cover5.jpg');
+    }
 }
 .cover-page-bottom{
     display: flex;
@@ -131,10 +169,11 @@
   
 }
 .service-items{
-    height:auto;
+    height:140px;
     width:150px;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius:30px ;
+    transition: height 1s,margin-top 1s;
    
 }
 .service-items h2{
@@ -145,7 +184,9 @@
    margin-left: 30px;
 }
 .service-items:hover{
-
+    height: 130px;
+    margin-top: 10px;
+    /* width: 145px; */
     background-color:gray;
 
 }
@@ -154,6 +195,7 @@
 .latest-from-ncell-section{
     width: 100%;
     padding:100px 120px;
+    background: linear-gradient(180deg ,rgb(245,246,246),rgb(231,232,233));
     
     
 }
@@ -170,14 +212,13 @@
 }
  
 .card1,.card2,.card3{
-    height:35rem;
-    width:25%;
-    border: 2px solid blue;
-    border-radius: 40px;
+   width: auto;
+   height: auto;
 
 }
 .bottom-button{
    margin-top:50px ;
+  margin-left: 28rem;
   
 }
 
@@ -230,21 +271,24 @@ margin: 0px 120px;
   
 }
 
+
+/* <!-------4G upgrade section-------------> */
 .fourg-upgrade-section {
-    padding: 5rem 9rem;
-    background: linear-gradient(270deg, rgba(29, 46, 72, 0.28) 0%, rgba(105, 44, 145, 0) 100%);
+    padding: 10rem 9rem;
+    background-image: url(./images/home-page-upgrade-to-4g_1366x558pxfsqff.jpg);   
     display: flex;
     flex-direction: row-reverse;
-    line-height: 2;
+  
+    color: white;
 }
 
 .fourg-upgrade-section aside{
     flex: .3;
-   
+  
 }
 
 .fourg-upgrade-section aside button{
-   
+    line-height: 2;
     height: 40px;
    width: 210px;
    border-radius: 20px;
@@ -253,8 +297,14 @@ margin: 0px 120px;
    background: linear-gradient(90deg, #f04e23 0%, #f04e23 10%, #f26322 30.55%, #f6871f 76.87%, #f7941d 99.95%, #f7941d 100%);
 }
 .fourg-upgrade-section aside h1:nth-child(1){
-    font-size: 25px;
+    font-size: 35px;
+    line-height: 2;
 }
+.fourg-upgrade-section aside h1:nth-child(2){
+    font-size: 25px;
+   
+}
+
 
 /* <!--------Manage your acc section------------> */
 
