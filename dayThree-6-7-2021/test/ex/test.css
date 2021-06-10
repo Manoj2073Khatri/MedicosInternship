@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.first{
+    display:flex;
+  justify-content: space-between;
+}
+
+.first p:nth-child(1){
+    display: none;
+}
+.first p:nth-child(2){
+    visibility: hidden;
+}
+
+@media  screen and (max-width:900px) {
+
+    .first p:nth-child(1){
+    display: visible;
+}
+.first p:nth-child(2){
+    visibility: visible;
+}
+}

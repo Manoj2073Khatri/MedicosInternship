@@ -89,9 +89,10 @@
 .cover-slider{
   
    background-image: url('./images/cover1.jpg' );
-   object-fit: contain;
+   background-size: contain;
    height:400px;
    width: 100%;
+   background-repeat: no repeat;
    animation: slider 30s infinite 2s;
    
 }
@@ -176,7 +177,8 @@
     width:150px;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius:30px ;
-    transition: height 1s,margin-top 1s;
+    /* transition: height 1s,margin-top 1s; */
+    transition: 1s;
    
 }
 .service-items h2{
@@ -187,9 +189,9 @@
    margin-left: 30px;
 }
 .service-items:hover{
-    height: 130px;
-    margin-top: 10px;
-    /* width: 145px; */
+    /* height: 130px;
+    margin-top: 10px; */
+  transform: translateY(-15px);
     background-color:gray;
 
 }
