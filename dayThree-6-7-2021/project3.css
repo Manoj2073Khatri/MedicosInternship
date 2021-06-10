@@ -89,10 +89,11 @@
 .cover-slider{
   
    background-image: url('./images/cover1.jpg' );
-   background-size: contain;
+    background-size: cover; 
    height:400px;
    width: 100%;
-   background-repeat: no repeat;
+   /* background-size: auto; */
+   background-repeat: no-repeat;
    animation: slider 30s infinite 2s;
    
 }
@@ -115,6 +116,7 @@
 }
 .cover-page-bottom{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background: linear-gradient(90deg, #221e67 0%, #5e1f70 24.95%, #7a2976 48.4%, #a3387d 82.83%, #b63f81 100%);
     padding:20px 120px;
@@ -170,6 +172,7 @@
 .services{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   
 }
 .service-items{
@@ -236,7 +239,7 @@
     border-style: none;
     border-radius: 20px;
 }
-
+/* <!-------4G section-------------> */
 
 .fourG-section{
 
@@ -252,8 +255,10 @@ margin: 0px 120px;
 
 .fourG-section-flex{
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 20px;
+    margin-top: 100px;
    
 }
 .fourG-section-flex h1{
@@ -281,6 +286,9 @@ margin: 0px 120px;
 .fourg-upgrade-section {
     padding: 10rem 9rem;
     background-image: url(./images/home-page-upgrade-to-4g_1366x558pxfsqff.jpg);   
+   background-size: cover;
+  
+   background-repeat:no-repeat ;
     display: flex;
     flex-direction: row-reverse;
   
@@ -291,7 +299,6 @@ margin: 0px 120px;
     flex: .3;
   
 }
-
 .fourg-upgrade-section aside button{
     line-height: 2;
     height: 40px;
@@ -313,27 +320,37 @@ margin: 0px 120px;
 
 /* <!--------Manage your acc section------------> */
 
-.Manage-your-acc-section img{
-    object-fit: cover;
-    
-    
-}
 .Manage-your-acc-section-mid{
-    padding:0 2rem;
+    background-image: url(./images/mg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 550px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    transform: translateY(-15rem);
-    margin-left: 12rem;
+    padding: 0px 30px;
+
 }
+
 .Manage-your-acc-section-mid picture{
     display: flex;
-    flex: 1;
+    flex: .8;
     justify-content: space-evenly;
 
+ }
+ .logos {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 20%;
+ }
+ .logos p{
+    text-align: center;
 }
 .Manage-your-acc-section-mid1 h1{
     font-size: 40px;
-}
+} 
+
 .Manage-your-acc-section-mid1 button{
     height: 40px;
     width: 210px;
@@ -353,12 +370,14 @@ margin: 0px 120px;
     padding:0 10rem;
     display:flex ;
     flex-direction: row-reverse;
+    align-items: center;
     justify-content: space-between; 
 }
 .set-ncell-app-section-content img{
-    transform: translateY(-6rem);
+    transform: translateY(-4.5rem);
 }
 .set-ncell-app-section-content1{
+    align-items: center;
     margin-top: 3rem;
     color: white;
     line-height: 2.5;
@@ -462,7 +481,8 @@ footer ul li{
 }
 
 .cover-page-bottom{
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     padding-left: 5rem;
     line-height: 2;
 }
@@ -487,30 +507,42 @@ footer ul li{
 .fourG-section{
     flex-direction: column;
 }
+
+/* <!-------4G upgrade section-------------> */
+.fourg-upgrade-section aside h1:nth-child(1){
+font-size: 30px;
+}
+.fourg-upgrade-section aside h1:nth-child(2){
+    font-size:20px ;
+}
+
+
 /* <!--------Manage your acc section------------> */
 
-.Manage-your-acc-section-mid picture{
-    
-    flex-wrap: wrap;
-
+.Manage-your-acc-section-mid{
+    flex-direction: column;
+  
 }
+
 .Manage-your-acc-section-mid{
     flex-direction: column;
 }
+.Manage-your-acc-section-mid1{
+    flex:1;
+    margin-top: 100px;
+}
+
 
 
 /* <!--------set ncell app section------------> */
+
+.set-ncell-app-section-content{
+    flex-direction: column;
+}
 .set-ncell-app-section-content1{
-   
-    line-height: 1.5;
+    flex: .3;
 }
-.set-ncell-app-section-content1 p{
-    font-size: 10px;
-}
-.set-ncell-app-section-content img{
-    height: 200px;
-    width:250px
-}
+
 .btn{
     display: flex;
 }
