@@ -417,9 +417,6 @@ margin: 0px 120px;
     padding: 3rem 11rem;
    
 }
-.connect-with-us-section p{
-    visibility: hidden;
-}
 
 
 /* <!--------footer section------------> */
@@ -529,12 +526,7 @@ footer ul li{
 
 /* <!--------Connect with us section------------> */
 
-.connect-with-us-section p{
-    visibility: visible;
-}
-.section-b{
-    visibility: hidden;
-}
+
 .connect-with-us-section{
     flex-direction: column;
 }

@@ -19,9 +19,11 @@
 
 @media  screen and (max-width:900px) {
 
-    .first p:nth-child(1){
-    display: visible;
-}
+     .first p:nth-child(1){
+    display: flex; }
+      /* how to make it visible */
+
+
 .first p:nth-child(2){
     visibility: visible;
 }
