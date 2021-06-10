@@ -119,6 +119,7 @@
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(90deg, #221e67 0%, #5e1f70 24.95%, #7a2976 48.4%, #a3387d 82.83%, #b63f81 100%);
+   
     padding:20px 120px;
 }
 .cover-page-bottom h3{
@@ -139,6 +140,7 @@
       border-radius: 20px;
       border-style: none;
       font-size: 16px;
+      border: 1px solid blue;
        }
 
 .cover-page-bottom-input-2 input:nth-child(2){
@@ -181,9 +183,11 @@
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius:30px ;
     /* transition: height 1s,margin-top 1s; */
+    
     transition: 1s;
    
 }
+
 .service-items h2{
     text-align: center;
     font-size: 15px;
@@ -204,27 +208,71 @@
     width: 100%;
     padding:100px 120px;
     background: linear-gradient(180deg ,rgb(245,246,246),rgb(231,232,233));
-    
-    
+     align-items: center; 
+   
+   
 }
 
 .latest-from-ncell-section h1{
    text-align: center;
 }
 
+
 .card{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 60px;
-}
- 
-.card1,.card2,.card3{
-   width: auto;
-   height: auto;
 
 }
-.bottom-button{
+ .card1{
+     border-radius: 20px;
+     background-color: #4c17a2;
+     height: 620px;
+     width: 350px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: white;
+     line-height: 2;
+ }
+.card1 img:nth-child(1)
+{
+    margin-left: 14rem;
+}
+.card1 h2{
+    text-align: center;
+}
+.card1 h3{
+    color: #861649;
+    transform: translateY(-100px);
+    font-size: 30px;
+}
+.card button{
+    width: 60%;
+    padding:5px 10px;
+    border-radius: 10px;
+    border-style: none;
+    border: 1px solid blue;
+}
+ .card1:nth-child(2){
+background-color: #f36d7a;
+height: 680px;
+    
+ }
+ .btn-belo-card button{
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: #5e1f70;
+    color: white;
+    margin-left: 29rem;
+ }
+ 
+
+/* .bottom-button{
    margin-top:50px ;
   margin-left: 28rem;
   
@@ -238,7 +286,10 @@
     text-align: center;
     border-style: none;
     border-radius: 20px;
-}
+} */
+
+
+
 /* <!-------4G section-------------> */
 
 .fourG-section{
@@ -486,6 +537,16 @@ footer ul li{
     padding-left: 5rem;
     line-height: 2;
 }
+.cover-page-bottom-input-2{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.cover-page-bottom-input-2 input:nth-child(2){
+    margin-left: 0px;
+
+}
 /* <!--------find what you need section------------> */
 
 .services{
@@ -493,16 +554,21 @@ footer ul li{
 }
 /* <!--------ncell latest section------------> */
 
-.card{
-    flex-wrap: wrap;
-  
-}
 
-.bottom-button{
-    margin-top:50px ;
-   margin-left: 3.5rem;
+
+.card{
+   flex-direction: column;
+
+}
+.btn-belo-card button{
    
+    margin-left: 2rem;
  }
+
+
+
+
+
 /* <!-------4G section-------------> */
 .fourG-section{
     flex-direction: column;
