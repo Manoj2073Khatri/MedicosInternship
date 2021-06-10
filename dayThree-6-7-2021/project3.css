@@ -74,13 +74,16 @@
 .nav-bottom-right i:nth-child(1){
     margin-right: 2rem;
 }
+.nav-bottom-right i:nth-child(3){
+   visibility: hidden;
+}
 .nav-top ul li:hover .nav-bottom{
     visibility: visible;
     opacity: 1;
     transition: .2s ease;
 }
 
-/*--------------------------Cover Page--------------------------------*/
+/*--------------------------Cover Page--------------------------*/
 
 
 .cover-slider{
@@ -232,7 +235,7 @@
     border-radius: 20px;
 }
 
-/* <!-------4G section-------------> */
+
 .fourG-section{
 
 display: flex;
@@ -413,7 +416,7 @@ margin: 0px 120px;
    
 }
 .connect-with-us-section p{
-    display:none;
+    visibility: hidden;
 }
 
 
@@ -432,4 +435,106 @@ footer p{
 footer ul li{
     padding:10px;
     list-style: none;
+}
+
+@media screen and (max-width:845px){
+
+/*--------------------------Navigation bar--------------------------------*/
+    
+.nav-top{
+    width: 100%;
+}
+.nav-top-row{
+    padding-left:8rem;
+}
+
+.nav-bottom-left{
+    display: none;
+}
+.nav-bottom-right i:nth-child(3){
+   visibility: visible;
+   padding-left: 10px;
+}
+
+/*--------------------------Cover Page--------------------------*/
+.cover-slider{
+    width: 100%;
+    height:300px;
+}
+
+.cover-page-bottom{
+    flex-wrap: wrap;
+    padding-left: 5rem;
+    line-height: 2;
+}
+/* <!--------find what you need section------------> */
+
+.services{
+    flex-wrap: wrap;
+}
+/* <!--------ncell latest section------------> */
+
+.card{
+    flex-wrap: wrap;
+  
+}
+
+.bottom-button{
+    margin-top:50px ;
+   margin-left: 3.5rem;
+   
+ }
+/* <!-------4G section-------------> */
+.fourG-section{
+    flex-direction: column;
+}
+/* <!--------Manage your acc section------------> */
+
+.Manage-your-acc-section-mid picture{
+    
+    flex-wrap: wrap;
+
+}
+.Manage-your-acc-section-mid{
+    flex-direction: column;
+}
+
+
+/* <!--------set ncell app section------------> */
+.set-ncell-app-section-content1{
+   
+    line-height: 1.5;
+}
+.set-ncell-app-section-content1 p{
+    font-size: 10px;
+}
+.set-ncell-app-section-content img{
+    height: 200px;
+    width:250px
+}
+.btn{
+    display: flex;
+}
+
+/* <!--------latest offers section------------> */
+.latest-offer-section{
+    padding:3rem 4rem;
+}
+.col-2{
+    flex-wrap: wrap;
+}
+
+
+/* <!--------Connect with us section------------> */
+
+.connect-with-us-section p{
+    visibility: visible;
+}
+.section-b{
+    visibility: hidden;
+}
+.connect-with-us-section{
+    flex-direction: column;
+}
+
 }
