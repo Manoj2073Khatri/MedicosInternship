@@ -207,10 +207,11 @@
 .latest-from-ncell-section{
     width: 100%;
     padding:100px 120px;
-    background: linear-gradient(180deg ,rgb(245,246,246),rgb(231,232,233));
-     align-items: center; 
-   
-   
+    background: linear-gradient(180deg ,rgb(245,246,246),rgb(231,232,233));  
+     /* display: flex;
+     flex-direction: column; 
+     align-items: center;  */
+
 }
 
 .latest-from-ncell-section h1{
@@ -220,8 +221,8 @@
 
 .card{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+   /* align-self: left; */
+   justify-content: space-between;
     padding-top: 60px;
 
 }
@@ -256,9 +257,9 @@
     border: 1px solid blue;
 }
  .card1:nth-child(2){
-background-color: #f36d7a;
-height: 680px;
-    
+   background-color: #f36d7a;
+   height: 680px;
+   transform: translateY(-25px);
  }
  .btn-belo-card button{
     height: 40px;
@@ -268,7 +269,12 @@ height: 680px;
     border: 1px solid white;
     background-color: #5e1f70;
     color: white;
-    margin-left: 29rem;
+    margin-top: 30px;
+    align-self: center;
+   
+ }
+ .btn-belo-card{
+     margin-left: 29rem;
  }
  
 
@@ -560,10 +566,9 @@ footer ul li{
    flex-direction: column;
 
 }
-.btn-belo-card button{
-   
-    margin-left: 2rem;
- }
+.btn-belo-card{
+    margin-left: 5rem;
+}
 
 
 
