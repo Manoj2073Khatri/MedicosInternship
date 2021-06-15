@@ -9,14 +9,13 @@
 /* ----------header----------- */
 
 .head-nav{
-   height: 80px;
+   height: 60px;
    width: 100%;
    display: flex;
    background-color: rgb(56, 83, 216);
    color: rgb(255, 255, 255);
    justify-content:space-between;
    align-items: center;
-   
    border: 1px solid rgb(74, 109, 227);
 }
 
@@ -58,11 +57,36 @@
     flex: .1;
 }
 
+/* <!-- -----------top contact section---------- --> */
+.contact-section{
+    text-align: center;
+    padding: 2rem 0 10rem;
+    background-color: rgb(55, 82, 213);
+    color: white;
+}
+.contact-section h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 2;
+}
+
+.contact-section ul{
+    display: flex;
+    justify-content: center;
+}
+.contact-section ul li{
+   padding-right: 8px ;
+   list-style-type: none;
+   font-size: 14px;
+   opacity: .5;
+}
+
 
 
 /* <!-- -----------main body---------- --> */
 main{
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
 
 }
