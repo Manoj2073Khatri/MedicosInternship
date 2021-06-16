@@ -47,6 +47,7 @@ body{
 }
 
 .head-col2 h1{
+    font-size: 30px;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -653,6 +654,10 @@ justify-content: space-between;
 .head-col3{
   flex: .5;
 }
+.head-col2 h1{
+    font-size: 25px;
+    
+  }
 /* <!-- -----------cover slider---------- --> */
 .cover-page-slider{
     height:400px;
@@ -899,6 +904,10 @@ font-size: 8px;
 .head-col3{
     flex: .4;
 }
+.head-col2 h1{
+    font-size: 20px;
+    
+  }
    
 /* <!-- -----------cover slider---------- --> */
 .cover-page-slider{
