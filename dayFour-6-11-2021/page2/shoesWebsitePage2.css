@@ -7,31 +7,34 @@
 
 
 /* ----------header----------- */
-
 .head-nav{
-   height: 60px;
-   width: 100%;
-   display: flex;
-   background-color: rgb(56, 83, 216);
-   color: rgb(255, 255, 255);
-   justify-content:space-between;
-   align-items: center;
-   border: 1px solid rgb(74, 109, 227);
+    background-color: rgb(56, 83, 216);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(74, 109, 227);
 }
-
-
 .head-col1{
     display: flex;
-    flex: .4;
+}
+.head-col1 i{
+    border-right: 1px solid rgb(74, 109, 227);
+    padding: 20px;
 }
 
-.head-col1 i{
-    flex: .15;
-    margin-left: 10px;
-}
-.head-col1-2{
+.head-col1-2 {
     display: flex;
-    flex: .85;
+}
+.head-col1-2 i:nth-child(1){
+    padding-right: 8px;
+    border-right: none;
+}
+
+.head-col1-2-p{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(74, 109, 227);
 }
 .head-col1-2-p p:nth-child(1){
     font-size: 8px;
@@ -40,22 +43,23 @@
 .head-col1-2-p p:nth-child(2){
     font-size: 10px;
     letter-spacing: 3px;
+    font-weight: bold;
 }
-
 .head-col2 h1{
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 2px;
+    padding: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .head-col3{
-   display: flex;
-   flex-direction: row-reverse;
-   flex: .4;
-
+    display: flex;
+    flex-direction: row-reverse;
+  
 }
 .head-col3 i{
-    flex: .1;
+    padding: 20px;
+    border-left: 1px solid rgb(74, 109, 227);
 }
 
 /* <!-- -----------top contact section---------- --> */
@@ -672,11 +676,6 @@ flex-direction: row-reverse;
 
 }
 
-
-
-
-
-
  /* ----------footer----------- */
 .foot-nav{
     width: 100%;
@@ -803,16 +802,31 @@ justify-content: space-between;
 {
 
 /* ----------header----------- */
-.head-col1{
-  flex: .5;
-}    
-.head-col3{
-  flex: .5;
+.head-col1 i{padding: 15px;
+}
+.head-col1-2 i:nth-child(1){
+    padding-right: 12px;
+}
+.head-col1-2-p{
+    padding: 14px;
+}
+.head-col1-2-p p:nth-child(1){
+    font-size: 7px;
+    letter-spacing: 2px;
+}
+.head-col1-2-p p:nth-child(2){
+    font-size: 7px;
+    letter-spacing: 2px;
 }
 .head-col2 h1{
-    font-size: 25px;
-    
-  }
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.head-col3 i{
+    padding: 15px;
+}
+   
 
 /* <!-- -----------top contact section---------- --> */
 .contact-section h1{
@@ -1025,12 +1039,16 @@ justify-content: space-between;
   }
 .right-row2-item p{
     padding: 0 0 15px 15px;
+    font-size: 12px;
   }
 .right-row2-item1{
     padding: 1rem .5rem .5rem 1rem;
 }
 .right-row2-item1 h1{
     font-size: 10px;
+}
+.right-row2-item1-bottom p{
+    font-size: 12px;
 }
 .right-row2-item1-mid button{
     padding: 5px;
@@ -1039,6 +1057,7 @@ justify-content: space-between;
  .right-row2-item1-mid i{
     padding: 5px;
  }
+ 
  
 
 .right-row3-item h1{
@@ -1159,19 +1178,24 @@ main{
 {
 
  /* ----------header----------- */
-.head-col1{
-    flex: .4;
-}    
-.head-col1-2 p{
+ .head-col1 i{
+    padding: 12px;
+}
+.head-col1-2 i:nth-child(1){
+    border-right: 1px solid rgb(74, 109, 227);
+}
+.head-col1-2-p{
     display: none;
 }
-.head-col3{
-    flex: .4;
-}
 .head-col2 h1{
-    font-size: 20px;
-    
-  }
+    padding: 8px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.head-col3 i{
+    padding: 12px;
+}
+
    
 /* <!-- -----------top contact section---------- --> */
 .contact-section h1{
