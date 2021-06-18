@@ -276,8 +276,21 @@ color: rgb(188, 188, 188);
     width: 50%; 
     object-fit: cover;
 }
-
-
+/* <!-- -----------Card middle load --------- --> */
+.card-middle-load{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(231, 231, 231);
+}
+.card-middle-load i{
+    padding: 7px;
+    color: blue;
+ 
+}
+.card-middle-load p{
+    padding: 5px;
+    font-size: 16px;
+}
 
 /* <!-- -----------Card row 6--------- --> */
 .card-row6{
