@@ -95,7 +95,7 @@
 
 /* <!-- -----------main body---------- --> */
 main{
-    
+    height: 3350px;
     width: 100%;
     background-color: white;
 
@@ -104,12 +104,12 @@ main{
 
 /* <!-- -----------Main Card---------- --> */
 .Main-card{
-    /* position:absolute; */
+    position:absolute;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color:white ;
-    /* transform: translate(150px,-59px); */
-    transform: translateX(150px);
+    transform: translate(135px,-59px);
+    
 }
 
 
@@ -162,7 +162,17 @@ padding: 10rem 8rem 5rem;
 /* <!-- -----------share icon---------- --> */
 .share-icon{
     position:absolute;
-    float: right;
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+  padding: 0 5rem ;
+  transform: translateY(-20px);
+}
+.share-icon i{
+  background-color: yellow;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
 }
 
 
