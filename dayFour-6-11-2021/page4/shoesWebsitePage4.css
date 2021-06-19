@@ -101,7 +101,9 @@ main{
 
 }
 
-
+body{
+    width: 100%;
+}
 /* <!-- -----------Main Card---------- --> */
 .Main-card{
     position:absolute;
@@ -111,9 +113,6 @@ main{
     transform: translate(135px,-59px);
     
 }
-
-
-
 /* <!-- ----------- Card row1---------- --> */
 .card-row1{
 width: 100%;
@@ -169,7 +168,7 @@ padding: 10rem 8rem 5rem;
   transform: translateY(-20px);
 }
 .share-icon i{
-  background-color: yellow;
+  background-color: rgb(255, 180, 0);
   color: white;
   padding: 12px;
   border-radius: 50%;
@@ -234,18 +233,16 @@ color: rgb(137, 137, 137);
     color: rgb(137, 137, 137);
     padding-bottom: 1rem;
   }
-.card-row3-secondRow-icon i{
-/* background-color: blue;
-color: white;
-border-radius: 50%;
-width: 34px;
-padding: 8px;
-margin-left: 20rem; */
+.card-row3-secondRow-icon{
 display: flex;
 justify-content: center;
-transform: translateY(8px);
-color: blue;
-  
+}
+.card-row3-secondRow-icon i{
+    background-color:blue ;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    transform: translateY(15px);
 }
 .card-row3-secondRow-quote{
      border: 1px solid rgb(231, 231, 231) ;
@@ -284,7 +281,9 @@ padding: 2rem 0;
 
 
 .card-row3-fourthRow-tags{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     font-size: 10px;
     font-weight: bold;
@@ -307,8 +306,6 @@ padding: 2rem 0;
 /* <!-- ----------- Card row4---------- --> */
 .card-row4{
     width: 100%;
-    border-top: rgb(137, 137, 137);
-    border-bottom: rgb(137, 137, 137);
     display: flex;
     justify-content: space-between;
     padding: 1rem 12.8rem;
@@ -763,7 +760,174 @@ justify-content: space-between;
     font-size: 12px;
    
  } 
+/* <!-- -----------main body---------- --> */
+main{
+    height: 3500px;
+}
 
+/* <!-- -----------Main Card---------- --> */
+.Main-card{
+    transform: translate(75px,-59px);
+}
+
+/* <!-- ----------- Card row1---------- --> */
+.card-row1{
+height: 300px;
+padding: 8rem 4rem 3rem;
+
+}
+.card-row1 p{
+   width:42px;
+   font-size: 8px;
+}
+.card-row1-item2 h1{
+   font-size: 25px;
+   flex: .8;
+   line-height: 1;
+}
+.card-row1-item2-col2 li{
+   font-size: 8px;
+}
+
+
+/* <!-- ----------- Card row2---------- --> */
+
+.card-row2{
+   font-size: 14px;
+   padding: 3rem 4rem;
+   line-height: 1.2;
+}
+
+/* <!-- ----------- Card row3---------- --> */
+
+.card-row3{
+    padding: 5px 5.7rem 2rem;
+}
+.card-row3-firstRow{
+font-size: 10px;
+line-height: 1.2;
+}
+.card-row3-firstRow p:nth-child(1){
+    padding-bottom: 1rem;
+}
+.card-row3-firstRow-pic img{
+    height: auto;
+}
+.card-row3-firstRow p:last-child{
+  padding: 1.5rem 0px;
+}
+.card-row3-secondRow h1{
+  font-size: 20px;
+  padding-bottom: .5rem;
+}
+.card-row3-secondRow p{
+    font-size: 10px;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+  }
+.card-row3-secondRow-quote{
+     padding: 1.5rem;
+}
+.card-row3-secondRow-quote p{
+   font-size: 12px;
+   line-height: 1.2;
+}
+.card-row3-secondRow-quote h3{
+   font-size: 6px;
+}
+
+.card-row3-thirdRow{
+padding: 1rem 0;
+}
+.card-row3-thirdRow h2{
+   font-size: 16px;
+}
+.card-row3-thirdRow p{
+   font-size: 10px;
+   line-height: 1.2;
+}
+
+
+.card-row3-fourthRow-tags{
+    font-size: 8px;
+}
+.card-row3-fourthRow-tags li{
+    padding:8px;
+}
+.card-row3-fourthRow-tags li:nth-child(1){
+   padding-right: 1px;
+}
+
+
+
+/* <!-- ----------- Card row4---------- --> */
+.card-row4{
+    padding: 1rem 5.5rem;
+}
+.card-row4 button{
+     width: 30%;
+     font-size: 10px;
+ }
+
+
+/* <!-- ----------- Card row5---------- --> */
+.card-row5{
+    flex-direction: column;
+}
+.card-row5-col1,.card-row5-col2{
+    width: 100%;
+    border-right: none;
+   
+}
+.card-row5-col1 img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 5px 0px;
+ }
+ .card-row5-col1-sticker{
+     transform: translateY(-17px);
+ }
+.card-row5-col1 h2{
+font-size: 16px;
+width: 70%;
+}
+.card-row5-col1-icons li{
+    padding: 10px 2rem;
+}
+
+.card-row5-col2{
+padding: 2rem 1rem;
+}
+.card-row5-col2 h2{
+    padding: 2rem 0;
+}
+.card-row5-col2-icons{
+  padding: 2rem;
+}
+.card-row5-col2-icons li{
+    padding: 0 2rem;
+}
+
+
+/* <!-- -----------card middle load---------- --> */
+
+.card-middle-load p{
+   font-size: 12px;
+}
+
+
+/* <!-- -----------card last section---------- --> */
+.card-last{
+    padding: 2rem 1rem;
+}
+
+
+/* <!-- same pattern so code reuse 3times but one section has diff padding--> */
+.card-last-r3{
+    padding: 2rem 0 2rem 3rem;
+
+}
 /* <!-- -----------newsletter---------- --> */
 
 .newsletter{
@@ -872,6 +1036,44 @@ justify-content: space-between;
     font-size: 10px;
    
  }
+
+/* <!-- -----------main body---------- --> */
+main{
+    height: 4000px;
+}
+
+/* <!-- -----------Main Card---------- --> */
+.Main-card{
+    transform: translate(50px,-59px);
+}
+/* <!-- ----------- Card row1---------- --> */
+.card-row1{
+    height: 250px;
+    padding: 5rem 2rem 1rem;
+    
+}
+
+.card-row1-item2 h1{
+    font-size: 20px;
+    flex: .9;
+}
+
+/* <!-- ----------- Card row2---------- --> */
+
+.card-row2{
+    padding: 3rem 2rem;
+ }
+ 
+/* <!-- ----------- Card row3---------- --> */
+
+.card-row3{
+    padding: 5px 3rem 2rem;
+}
+.card-row3-thirdRow{
+padding: 1rem 0;
+flex-direction: column;
+text-align: center;
+}
 
 /* <!-- -----------newsletter---------- --> */
 
