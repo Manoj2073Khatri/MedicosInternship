@@ -122,12 +122,10 @@ body{
 
  /* <!-- -----------main body---------- --> */
  main{
-     height: 2600px;
+     height: 2900px;
      width: 100%;
      background-color: white;
  }
-
-
 
  /* <!-- -----------Main Card---------- --> */
 .card{
