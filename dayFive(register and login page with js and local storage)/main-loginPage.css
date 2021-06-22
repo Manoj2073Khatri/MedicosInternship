@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dela Gothic One', cursive;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 150, 21);
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav li{
+    padding: 5px;
+    list-style-type: none;
+    font-size: 25px;
+   
+}
+.nav li a{
+    text-decoration: none;
+}
+
+
+.card{
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    margin:6rem auto;
+    display: flex;
+    flex-direction: column;
+     text-align: center;
+}
+.email input,.password input{
+width: 300px;
+padding:15px;
+margin-top: 25px;
+background-color: rgb(242, 242, 242);
+border-style: none;
+color: rgb(151, 109, 109);
+}
+.password i{
+    margin-left: -30px; 
+    cursor: pointer;
+}
+
+.card button{
+    width: 300px;
+    align-self: center;
+    padding:15px;
+    margin-top: 25px;
+    background-color: rgb(255, 150, 21);
+    border-style: none;
+}
+.text{
+    margin-top: 25px;
+}
+.text a{
+    color: rgb(255, 150, 21);
+}
+
+.nav li a:hover,.text a:hover{
+     color: green;
+}

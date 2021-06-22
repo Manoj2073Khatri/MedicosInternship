@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./registerPage.css">
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+    <ul class="nav">
+        <li><a href="./main-loginPage.html">Home</a></li>
+        <li><a href="./main-loginPage.html">Login</a></li>
+        <li><a href="./registerPage.html">Register</a></li>
+    </ul>
+
+
+   
+    <form class="card" action="./main-loginPage.html">
+        <div class="email">
+            <input type="text" placeholder="username" name="email" id="userEmail" required>
+        </div>
+        
+        <div class="password">
+            <input type="text" placeholder="password" name="password" id="userPassword" required>
+            <i class="far fa-eye" id="togglePassword"></i>
+            <script src="./eyeforregister.js"></script>
+        </div>
+
+        <ul class="helper-text">
+            <li class="length">Must be at least 8 characters long.</li>
+            <li class="lowercase">Must contain a lowercase letter.</li>
+            <li class="uppercase">Must contain an uppercase letter.</li>
+            <li class="special">Must contain a number or special character.</li>
+        </ul>
+
+        <button onclick="register()" >REGISTER</button>
+
+        <div class="text">
+            <p>Already have account?<a href="./main-loginPage.html">Login</a></p>
+        </div>
+    </form>
+   
+
+</body>
+</html>

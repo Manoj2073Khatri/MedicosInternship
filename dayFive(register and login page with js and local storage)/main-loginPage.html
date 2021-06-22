@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main-loginPage.css">
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+   
+        <ul class="nav">
+            <li><a href="./main-loginPage.html">Home</a></li>
+            <li><a href="./main-loginPage.html">Login</a></li>
+            <li><a href="./registerPage.html">Register</a></li>
+        </ul>
+
+
+       
+        <form class="card" >
+            <div class="email">
+                <input type="text" placeholder="username" name="email" id="email" required>
+            </div>
+            
+            <div class="password">
+                <input type="text" placeholder="password" name="password" id="password" required>
+                <i class="far fa-eye" id="togglePassword"></i>
+                <script src="./eyeforlogin.js"></script>
+            </div>
+            
+            <button onclick="login() ">Login</button>
+
+            <div class="text">
+                <p>Already have account?<a href="./registerPage.html">Register</a></p>
+            </div>
+        </form>
+       
+
+
+</body>
+</html>
