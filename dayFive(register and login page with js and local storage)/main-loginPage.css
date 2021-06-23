@@ -24,30 +24,36 @@ body{
     text-decoration: none;
 }
 
-
 .card{
  
-    width:30%;
+    width:40%;
     background-color: white;
-    margin:6rem auto;
+    margin:4rem auto;
     display: flex;
     flex-direction: column;
      text-align: center;
+     color: rgb(117, 117, 117);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .email input,.password input{
 width: 80%;
 padding:15px;
-margin-top: 25px;
 background-color: rgb(242, 242, 242);
 border-style: none;
-color: rgb(151, 109, 109);
+
 }
-.password i{
-    margin-left: -30px; 
-    cursor: pointer;
+.email input{
+margin-top:50px ;
 }
 .password input{
-    margin-right: 8px;
+margin-top: 25px;
+}
+.password i{
+    margin-left: -35px; 
+    cursor: pointer;
+}
+.password {
+    transform: translateX(-7px);
 }
 .card button{
     width: 80%;
@@ -56,9 +62,12 @@ color: rgb(151, 109, 109);
     margin-top: 25px;
     background-color: rgb(255, 150, 21);
     border-style: none;
+    font-size: 16px;
 }
 .text{
-    margin:25px 0 ;
+    margin:25px 0 50px 0;
+    width: 80%;
+    align-self: center;
 }
 .text a{
     color: rgb(255, 150, 21);
@@ -66,4 +75,12 @@ color: rgb(151, 109, 109);
 
 .nav li a:hover,.text a:hover{
      color: green;
+}
+
+
+@media screen and (max-width:900px){
+    
+    .card{
+        width:60%; 
+    }
 }
