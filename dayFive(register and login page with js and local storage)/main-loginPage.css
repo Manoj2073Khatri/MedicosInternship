@@ -6,11 +6,13 @@
 }
 body{
     background-color: rgb(255, 150, 21);
+    width: 100%;
 }
 
 .nav{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .nav li{
     padding: 5px;
@@ -24,8 +26,8 @@ body{
 
 
 .card{
-    height: 300px;
-    width: 400px;
+ 
+    width:30%;
     background-color: white;
     margin:6rem auto;
     display: flex;
@@ -33,7 +35,7 @@ body{
      text-align: center;
 }
 .email input,.password input{
-width: 300px;
+width: 80%;
 padding:15px;
 margin-top: 25px;
 background-color: rgb(242, 242, 242);
@@ -44,9 +46,11 @@ color: rgb(151, 109, 109);
     margin-left: -30px; 
     cursor: pointer;
 }
-
+.password input{
+    margin-right: 8px;
+}
 .card button{
-    width: 300px;
+    width: 80%;
     align-self: center;
     padding:15px;
     margin-top: 25px;
@@ -54,7 +58,7 @@ color: rgb(151, 109, 109);
     border-style: none;
 }
 .text{
-    margin-top: 25px;
+    margin:25px 0 ;
 }
 .text a{
     color: rgb(255, 150, 21);

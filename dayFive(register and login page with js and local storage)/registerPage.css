@@ -6,11 +6,13 @@
 }
 body{
     background-color: rgb(255, 150, 21);
+    width: 100%;
 }
 
 .nav{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .nav li{
     padding: 5px;
@@ -23,7 +25,7 @@ body{
 
 
 .card{
-    width: 400px;
+    width: 30%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -31,7 +33,7 @@ body{
     text-align: center;
 }
 .email input,.password input{
-width: 300px;
+width: 80%;
 padding:15px;
 margin-top: 25px;
 background-color: rgb(242, 242, 242);
@@ -43,20 +45,23 @@ color: rgb(151, 109, 109);
     margin-left: -30px; 
     cursor: pointer;
 }
+.password input{
+    margin-right: 8px;
+}
 
 .helper-text{
 font-size: 10px;
 display: flex;
 flex-direction: column;
-margin: 25px 0 0 70px;
+margin: 25px 0 0 50px;
 }
 .helper-text li{
-    list-style: none;
+  list-style: none;
   text-align: left;
 
 }
 .card button{
-    width: 300px;
+    width: 80%;
     align-self: center;
     padding:15px;
     margin-top: 25px;
@@ -64,7 +69,7 @@ margin: 25px 0 0 70px;
     border-style: none;
 }
 .text{
-    margin-top: 25px;
+    margin: 25px 0;
 }
 .text a{
     color: rgb(255, 150, 21);
