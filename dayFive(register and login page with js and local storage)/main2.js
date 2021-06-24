@@ -48,8 +48,8 @@ const addInfo=(ev)=>{
     }
 }
   
-document.addEventListener('DOMContentLoaded', ()=>{
-    document.getElementById('btnr').addEventListener('click', addInfo);
+   document.addEventListener('DOMContentLoaded', ()=>{
+   document.getElementById('btnr').addEventListener('click', addInfo);
 });
 
 // login
@@ -79,6 +79,6 @@ const login=()=>{
     
 }
 
-document.addEventListener('DOMContentLoaded', ()=>{
+    document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementById('btnl').addEventListener('click', login());
 });

@@ -5,28 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./weatherApp.css">
-    <script src="./weatherApp.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+   
     <title>Document</title>
 </head>
 <body>
     
 
     <div class="input">
-        <input type="text" class="inputValue" placeholder="Enter the city" />
-        <button  class="button">Search</button>
+        <input type="text" name="inputValue" id="cityName" placeholder="Enter the city name" />
+        <button type="button" name="btn" id="btn">Search</button>
       </div>
     </div>
   
       <div class="display">
-        <h1 class="nam"></h1>
-        <p class="temp"></p>
-        <p class="desc"></p>
+        <h1 id="name">Name</h1>
+        <img id="tempIcon" src="./images/atmosphere.svg" alt="" />
+        <p id="temp">temp</p>
+        <p id="desc">desc</p>
       </div>
    
- 
-  
 
 
+
+   <script src="./weatherApp.js"></script>
 
 </body>
 </html>
