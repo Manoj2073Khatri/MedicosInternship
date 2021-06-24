@@ -1,35 +1,26 @@
+const check1=()=>{
+    let emailField=document.getElementById('userEmail');
+    let passwordField=document.getElementById('userPassword');
+    let btnr=document.getElementById('btnr');
 
+    if(emailField.value !='' && passwordField.value != ''){
+       btnr.disabled=false;
+    }
+    else{
+        btnr.disabled=true;
+    }
+}
 const register=()=>{
     let emailField=document.getElementById('userEmail');
     let passwordField=document.getElementById('userPassword');
-    let bt=document.getElementById('btnr');
 
     let lowerCaseLetters = /[a-z]/g;
     let upperCaseLetters = /[A-Z]/g;
     let numbers = /[0-9]/g;
 
 
-
-    // if(emailField.value!='' && passwordField.value != 0)
-    // {
-    //     bt.disabled=false;
-    // }
-    // else{
-    //     bt.disabled=true;
-       
-    // }
-
-    if(emailField.value.length == 0){
-        alert('Please fill in email');
-
-    }else if(passwordField.value.length == 0){
-        alert('Please fill in password');
-
-    }else if(emailField.value.length == 0 && passwordField.value.length == 0){
-        alert('Please fill in email and password');
-     
-    }else if(passwordField.value.length > 8){
-        alert('Max of 8');
+    if(passwordField.value.length > 8){
+        alert('Max of 8 characters');
 
     }else if(!passwordField.value.match(numbers)){
         alert('please add 1 number');
@@ -46,16 +37,30 @@ const register=()=>{
         localStorage.setItem('email', emailField.value);
         localStorage.setItem('password', passwordField.value);
         alert('Your account has been created');
+        window.open('./main-loginPage.html');
+        // location.assign(".welcome.html");
+        // location.replace="./welcome.html"; 
+        // window.location.href="./welcome.html";
+        // window.location="./welcome.html";
     }
   
 
 }
 
+
+const check2=()=>{
+    let loginEmail = document.getElementById('email');
+    let loginPassword = document.getElementById('password');
+    let btnl=document.getElementById('btnl');
+
+    if(loginEmail.value !='' && loginPassword.value != ''){
+       btnl.disabled=false;
+    }
+    else{
+        btnl.disabled=true;
+    }
+}
 const login=()=>{
-
-
-
-   
 
     let storedEmail = localStorage.getItem('email');
     let storedPassword = localStorage.getItem('password');
@@ -64,21 +69,14 @@ const login=()=>{
     let loginEmail = document.getElementById('email');
     let loginPassword = document.getElementById('password');
 
-
-    // if(loginPassword.value!='')
-    // {
-    //     loginPassword.disabled=false;
-    // }
-    // else{
-    //     loginPassword.disabled=true;
-    // }
     if(loginEmail.value == storedEmail && loginPassword.value == storedPassword){
    
     alert('You are logged in.');
     window.open('./welcome.html');
     // location.assign(".welcome.html");
     // location.replace="./welcome.html"; 
-    // window.location.href="welcome.html";
+    // window.location.href="./welcome.html";
+    // window.location="./welcome.html";
     
 
     }else{

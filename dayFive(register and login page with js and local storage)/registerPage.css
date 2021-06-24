@@ -52,7 +52,7 @@ border-style: none;
     cursor: pointer;
 }
 .password {
-    transform: translateX(-7px);
+    transform: translateX(-6px);
 }
 
 .helper-text{

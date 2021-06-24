@@ -23,13 +23,13 @@
 
 
    
-    <form class="card" action="./main-loginPage.html">
+    <form class="card">
         <div class="email">
-            <input type="text" placeholder="username" name="email" id="userEmail" required>
+            <input type="text" placeholder="username" name="email" id="userEmail"  onkeyup="check1()"/>
         </div>
         
         <div class="password">
-            <input type="password" placeholder="password" name="password" id="userPassword" required >
+            <input type="password" placeholder="password" name="password" id="userPassword"  onkeyup="check1()"/>
             <i class="far fa-eye-slash" id="togglePassword"></i>
             <script src="./eyeforregister.js"></script>
         </div>
@@ -41,7 +41,7 @@
             <li class="special">Must contain a number or special character.</li>
         </ul>
 
-        <button id="btnr"  onclick="register()"  >REGISTER</button>
+        <button id="btnr"  onclick="register()" disabled >REGISTER</button>
 
         <div class="text">
             <p>Already have account?<a href="./main-loginPage.html">Login</a></p>
